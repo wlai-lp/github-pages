@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy Policy - SupportalX</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+            line-height: 1.7;
+            padding: 40px 20px;
+            max-width: 720px;
+            margin: 0 auto;
+        }
+        h1 { font-size: 28px; margin-bottom: 8px; color: #222; }
+        .last-updated { font-size: 13px; color: #888; margin-bottom: 32px; }
+        h2 { font-size: 18px; margin-top: 28px; margin-bottom: 8px; color: #444; }
+        p, ul { font-size: 15px; margin-bottom: 16px; }
+        ul { padding-left: 24px; }
+        li { margin-bottom: 6px; }
+        a { color: #764ba2; }
+    </style>
+</head>
+<body>
+    <h1>SupportalX — Privacy Policy</h1>
+    <p class="last-updated">Last updated: February 8, 2025</p>
+
+    <h2>Overview</h2>
+    <p>This is an internal tool for LivePerson resource only.  SupportalX is a Chrome extension that streamlines LivePerson support workflows by automating login processes. Your privacy is important to us. This policy explains what data the extension handles and how it is used.</p>
+
+    <h2>Data We Collect</h2>
+    <p>SupportalX stores the following data locally in your browser using Chrome's built-in storage API (<code>chrome.storage.sync</code>):</p>
+    <ul>
+        <li><strong>Username</strong> — Your LivePerson admin username</li>
+        <li><strong>Password</strong> — Your LivePerson admin password</li>
+        <li><strong>Site IDs</strong> — LivePerson account site IDs you enter</li>
+        <li><strong>Favorites</strong> — Saved site IDs with optional aliases</li>
+        <li><strong>Settings</strong> — Your last saved timestamp</li>
+    </ul>
+
+    <h2>How Your Data Is Used</h2>
+    <p>Your stored credentials are used exclusively to auto-fill login forms on LivePerson's own websites (<code>liveperson.net</code>). Specifically:</p>
+    <ul>
+        <li>LP Login — submits credentials to LivePerson's LiveEngage console</li>
+        <li>LPA Admin Access — submits credentials to LivePerson's admin access portal</li>
+        <li>Houston Login — submits credentials to LivePerson's backoffice portal</li>
+    </ul>
+    <p>This is functionally identical to you manually typing your credentials into these login pages.</p>
+
+    <h2>Where Your Data Is Stored</h2>
+    <p>All data is stored locally in your browser using <code>chrome.storage.sync</code>. This means:</p>
+    <ul>
+        <li>Data is stored on your device and synced across your Chrome browsers via your Google account</li>
+        <li>Data is encrypted in transit by Chrome's sync infrastructure</li>
+        <li>Data is never stored on any server owned or operated by the extension developer</li>
+    </ul>
+
+    <h2>Data Sharing</h2>
+    <p>SupportalX does <strong>not</strong>:</p>
+    <ul>
+        <li>Send your data to any third-party servers</li>
+        <li>Share your data with any third parties</li>
+        <li>Sell your data</li>
+        <li>Collect analytics or telemetry</li>
+        <li>Use tracking scripts or cookies</li>
+        <li>Load or execute any remote code</li>
+    </ul>
+
+    <h2>Network Requests</h2>
+    <p>The extension makes the following network requests:</p>
+    <ul>
+        <li><strong>LivePerson API</strong> (<code>api.liveperson.net</code>) — to resolve the correct admin domain for a given site ID. Only the site ID is sent; no credentials are included in this request.</li>
+        <li><strong>LivePerson login endpoints</strong> (<code>*.liveperson.net</code>) — to submit login forms with your credentials, identical to a manual browser form submission.</li>
+    </ul>
+
+    <h2>Permissions</h2>
+    <p>The extension requests only the permissions necessary for its functionality. A full explanation of each permission is available on the Chrome Web Store listing.</p>
+
+    <h2>Data Deletion</h2>
+    <p>You can delete all stored data at any time by:</p>
+    <ul>
+        <li>Clearing the username and password fields in the extension's settings and clicking Save</li>
+        <li>Removing the extension from Chrome (this deletes all associated storage)</li>
+    </ul>
+
+    <h2>Changes to This Policy</h2>
+    <p>If this privacy policy is updated, the "Last updated" date at the top will be revised. Continued use of the extension after changes constitutes acceptance of the updated policy.</p>
+
+    <h2>Contact</h2>
+    <p>If you have questions about this privacy policy, please contact: <strong>wlai@liveperson.com</strong></p>
+</body>
+</html>
