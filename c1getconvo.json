@@ -1,0 +1,126 @@
+{
+  "conversationId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+  "startTime": 16914476800000,
+  "endTime": 16914476800000,
+  "participant": [
+    {
+      "participantId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "type": "CUSTOMER",
+      "identifier": "string",
+      "relationShipType": "SPOUSE",
+      "authentication": {
+        "level": "HIGH",
+        "factor": [
+          {
+            "type": "SSN",
+            "status": "VERIFIED",
+            "attempts": "string"
+          }
+        ],
+        "callType": "INBOUND"
+      }
+    }
+  ],
+  "intents": [
+    {
+      "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "type": "EXPRESS_PAY",
+      "initiatedIn": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "resolvedIn": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "createdDateTime": 16914476800000,
+      "expiryTime": 16914476800000,
+      "serviceEndTime": 16914476800000,
+      "status": "OPEN",
+      "context": {
+        "participants": [
+          {
+            "participantId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+            "relationshipType": "PRIMARY",
+            "participantData": {
+              "promised": 10,
+              "dueDate": "2024-07-29T00:00:00.000Z"
+            }
+          }
+        ],
+        "product": "CREDIT_CARD",
+        "accountId": "12345678",
+        "accountData": {
+          "paymentBalance": 25,
+          "paymentDueDate": "2024-07-29T00:00:00.000Z"
+        },
+        "customerData": [
+          {
+            "customerName": "string",
+            "SSN": 1234,
+            "CC": 5678,
+            "lastPaymentDate": 16914476800000,
+            "customerID": "123abc",
+            "debitCard": 1224,
+            "paymentAmount": 0
+          },
+          "string"
+        ]
+      }
+    }
+  ],
+  "dialogue": [
+    {
+      "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "startTime": 16914476800000,
+      "endTime": 16914476800000,
+      "participants": [
+        "3fa85f64-5717-4562-b3fc-2c963f66afa6"
+      ],
+      "externalDialogueId": "string",
+      "initiatedBy": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "channel": "SMS",
+      "status": "OPEN",
+      "client": {
+        "device": "Mobile",
+        "geographicalContext": {
+          "city": "Chicago",
+          "country": "United States",
+          "lat": 41.8889,
+          "lon": 56.3344
+        },
+        "phoneNumber": "+1919000000",
+        "ipAddress": "1.23.45.12",
+        "userAgent": {
+          "browser": "CHROME",
+          "OS": "Android",
+          "rawUserAgent": "okta-auth-kotlin/33 Android/13 aarch64"
+        }
+      },
+      "intentActions": [
+        {
+          "intentId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+          "actions": [
+            {
+              "entity": "SMS",
+              "type": "ADD",
+              "time": 16914476800000,
+              "data": {},
+              "performedBy": "3fa85f64-5717-4562-b3fc-2c963f66afa6"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "status": "string",
+  "recommendedChannel": {
+    "description": "card immediate payment",
+    "channel": "UCRM_PORTAL",
+    "authentication_level": "HIGH",
+    "channels": [
+      {
+        "channel_id": "SELF_SERVICE_PORTAL",
+        "priority": "2"
+      },
+      {
+        "channel_id": "UCRM_PORTAL",
+        "priority": "1"
+      }
+    ]
+  }
+}
