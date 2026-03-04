@@ -50,7 +50,7 @@
         },
         "customerData": [
           {
-            "customerName": "string",
+            "customerName": "Joe Smith",
             "SSN": 1234,
             "CC": 5678,
             "lastPaymentDate": 16914476800000,
